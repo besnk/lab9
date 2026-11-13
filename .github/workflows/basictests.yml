@@ -1,0 +1,23 @@
+name: Lab9 Basic Tests
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch: # Allows you to run this manually from the Actions tab
+
+jobs:
+  lab9-basic-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Run Test 1 (Should PASS)
+      run: bash validate-data.sh "ivan pebredo" "0851014343"
+
+    - name: Run Test 2 (Should FAIL)
+      run: bash validate-data.sh "ivan pebredo" "08510143433"
+
+    - name: Run Test 3 (Should FAIL)
+      run: bash validate-data.sh "ivan pebredoqwerty" "0851014343"
