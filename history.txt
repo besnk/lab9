@@ -1,0 +1,64 @@
+  504  mkdir week9 ; cd week9
+  505  git init
+  506  gh auth login
+  507  gh repo create lab9 --public
+  508  nano validate-data.sh
+  509  bash validate-data.sh "ivan pebredo" "0851014343"
+  510  bash validate-data.sh "ivan pebredowert" "0851014343"
+  511  bash validate-data.sh "ivan pebredo" "0851014341234563"
+  512  mkdir -p .github/workflows
+  513  git add .github/workflows/basictests.yml
+  514  git commit -m "Add basictests.yml workflow"
+  515  git push origin main
+  516  git status
+  517  git branch -M main
+  518  git status
+  519  git push origin main
+  520  git add .
+  521  git status
+  522  ls
+  523  git commit -m "Add basictests workflow and validation script"
+  524  git push origin main
+  525  git push -u origin main
+  526  git remote -v
+  527  git remote -V
+  528  git remote -v
+  529  gh repo set-default
+  530  git clone git@github.com:besnk/lab9.git
+  531  git push -u origin main
+  532  git status
+  533  ls
+  534  git add .
+  535  git commit -m "Add basictests workflow and validation script"
+  536  git branch -M main
+  537  git push -u origin main
+  538  ls
+  539  cd lab9
+  540  ls
+  541  git add .
+  542  git commit -m "Add basictests workflow and validation script"
+  543  cd ..
+  544  mv validate-data.sh .github lab9/
+  545  cd lab9/
+  546  ls
+  547  git add .
+  548  git commit -m "Add basictests workflow and validation script"
+  549  git push -u origin main
+  550  git history
+  551  git checkout -b test
+  552  git status
+  553  nano validate-data.sh
+  554  git add validate-data.sh 
+  555  git commit -m "Update max name length to 20"
+  556  git push -u origin test
+  557  nano .github/workflows/basictests.yml
+  558  git add .github/workflows/basictests.yml
+  559  git commit -m "Allow action to run on test branch"
+  560  git push
+  561  nano .github/workflows/basictests.yml
+  562  git add .github/workflows/basictests.yml
+  563  git commit -m "Allow action to run on test branch"
+  564  git push -u origin test
+  565  history > history.txt
+  566  nano history.txt 
+  567  history > history.txt
