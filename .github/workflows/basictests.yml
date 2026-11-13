@@ -2,7 +2,7 @@ name: Lab9 Basic Tests
 
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: [ "main", "master", "test" ]
   workflow_dispatch: # Allows you to run this manually from the Actions tab
 
 jobs:
