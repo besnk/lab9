@@ -1,4 +1,4 @@
-name: Lab9 Basic Tests
+kname: Lab9 Basic Tests
 
 on:
   push:
@@ -14,10 +14,10 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Run Test 1 (Should PASS)
-      run: bash validate-data.sh "ivan pebredo" "0851014343"
+      run: bash validate-data.sh "pearse mccarthy" "0831122334"
 
     - name: Run Test 2 (Should FAIL)
-      run: bash validate-data.sh "ivan pebredo" "08510143433"
+      run: bash validate-data.sh "pearse mccarthy" "08311223344"
 
     - name: Run Test 3 (Should FAIL)
-      run: bash validate-data.sh "ivan pebredoqwerty" "0851014343"
+      run: bash validate-data.sh "pearseT mccarthy" "0831122334"
